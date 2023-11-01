@@ -1,0 +1,95 @@
+body{
+  background-color: #494d64;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  color: #f5bde6;
+}
+
+#container-intro{
+  display: none;
+}
+
+#novembro-1{
+  position: absolute;
+  top: 80px;
+  left: 350px;
+  animation: novembro-1 4s linear forwards;
+  transform: translateX(0); /* Define a posição inicial, nesse caso, 0 */
+}
+
+#novembro-4{
+  position: absolute;
+  height: 250px;
+  top: 400px;
+  left: 350px;
+  animation: novembro-4 4s linear forwards;
+  transform: translateX(0); /* Define a posição inicial, nesse caso, 0 */
+}
+
+#novembro-3{
+  position: absolute;
+  top: 130px;
+  right: 350px;
+  animation: novembro-3 4s linear forwards;
+  transform: translateX(0); /* Define a posição inicial, nesse caso, 0 */
+
+}
+
+@keyframes novembro-3{
+  0% {
+    transform: translateX(0) rotate(15deg); /* Posição inicial */
+  }
+  100% {
+    transform: translateX(150px) rotate(15deg); /* Movimento para a esquerda */
+  }
+
+}
+
+@keyframes novembro-1 {
+  0% {
+    transform: translateX(0) rotate(-20deg); /* Posição inicial */
+  }
+  100% {
+    transform: translateX(-200px) rotate(-20deg); /* Movimento para a esquerda */
+  }
+}
+
+@keyframes novembro-4{
+  0% {
+    transform: translateX(0) rotate(0deg); /* Posição inicial */
+  }
+  100% {
+    transform: translateX(-210px) rotate(0deg); /* Movimento para a esquerda */
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.box-mensagem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  min-width: 50%;
+  max-width: 70%;
+  z-index: 1;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  background-color: #1e1e2e;
+  box-shadow: rgba(242,205, 205, 0.4) -5px 5px, rgba(242, 205, 205, 0.3) -10px 10px, rgba(242, 205, 205, 0.2) -15px 15px, rgba(242, 205, 205, 0.2) -20px 20px, rgba(242, 205, 205, 0.1) -25px 25px, rgba(242, 205, 205, 0.05) -30px 30px;
+}
+
+img{
+  position: absolute;
+  z-index: 0;
+  width: 250px;
+}
