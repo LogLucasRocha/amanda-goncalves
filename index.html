@@ -1,49 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>amandinha.com</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".\css\style.css">
+
+   <title>Amanda Gonçalves</title>
+   <link rel="shortcut icon" href="./assets/manequim.png" />
 </head>
 
 <body>
-  <div class="starry-sky">
-    <starry>
-      <div class="container">
-        <div class="aesthetic-img">
-          <img src="Assets/Aesthetic-1.jpeg" alt="Foto Aesthetic que combina com minha namorada linda e perfeita." id="foto_introducao">
-        </div>
-        <div class="introducao">
-          <h1>Olá, <span id="apelido">minha bebezinha mais linda do mundo!</span><span id="barrinha">|</span></h1>
-          <h2>nós estamos juntos por...</h2>
-          <span id="tempo">
-            <p id="tempo-total">Sabe quanto tempo?</p>
-          </span>
-        </div>
-        <div class="meses">
-          <ul id="meses-do-ano">
-            <li><a href="./Meses/nov.html">Nov</a></li>
-            <li><a href="#">Dez</a></li>
-            <li><a href="#">Jan</a></li>
-            <li><a href="#">Fev</a></li>
-            <li><a href="#">Mar</a></li>
-            <li><a href="#">Abr</a></li>
-            <li><a href="#">Mai</a></li>
-            <li><a href="#">Jun</a></li>
-            <li><a href="#">Jul</a></li>
-            <li><a href="#">Ago</a></li>
-            <li><a href="#">Set</a></li>
-            <li><a href="#">Out</a></li>
-            <li><a href="#">1 year</a></li>
+<div class="body" style="font-family: 'Work Sans', sans-serif;">
+    <nav class="menu navbar navbar-expand-md navbar-light rounded" aria-label="Eleventh navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation"><img src=".\assets\menu.png" style="height: 30px;" alt=""></button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample09">
+          <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#whatido">O que eu faço?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#contact">Contatos</a>
+            </li>
           </ul>
         </div>
       </div>
-    </starry>
+    </nav>
+
+    <!--title--> 
+       <section id="title" class="hello">
+       <div class="title row flex-lg-row-reverse flex-column-reverse align-items-center justify-content-center g-5 pb-0 pt-3 ms-3 mb-3 me-3 ">
+        <div class="col-10  col-lg-6 col-xl-5 col-xxl-5">
+        <img src="assets/Amanda.png" class="amanda d-block mx-lg-auto  img-fluid" alt="Bootstrap Themes" loading="lazy">
+         </div>
+         <div class="col-lg-5 col-12">
+      
+         <h1 class="fw-bold text-sm-wrap">Olá! Eu sou a Amanda,   <br /> Design de Moda</h1>
+         <p class="paragraph">💖 Bem-vindo ao meu site. Eu sou uma estudante de design de moda apaixonada por explorar o mundo das tendências e da criatividade. 💖</p>
+         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a target="_blank" href="https://www.instagram.com/ak1ii/"><div style="color: black;" class="btn primary-button w-button">Entre em contato!</div></a>
+        </div>
+        </div>
+        </div>
+  </section> 
+
+   <!--what i do-->
+     <section id="whatido">
+     <h3 class="text-center">Paixão é o que nos move</h3>
+     <h2 class="text-center fw-bold">O que eu faço?</h2>
+     <div class="row row-cols-1 mt-4 row-cols-md-4 gap-3 mb-3 ms-4 me-4 justify-content-center gap-lg-5">
+     <div class="first box"><img src=".\assets\icon1.png" class="icon" height="100" alt=""> <h3>Design de Moda</h3> <p>Crio peças desruptivas e personalizadas para você e o seu negócio.</p></div>
+     <div class="second box"><img src=".\assets\icon2.png" class="icon" height="100" alt=""> <h3>Consultoria</h3> <p>Faço a sua consultoria de moda. Coloração & Renovação do guarda-roupa.</p></div>
+     <div class="third box"><img src=".\assets\icon3.png" class="icon" height="100" alt=""> <h3>Revenda meus produtos</h3> <p>Ganhe dinheiro levando meus produtos para sua loja ou se tornando uma afiliada.</p></div>
+     </div>
+
+</section>
+
+  <!--portfolio-->
+  <section id="portfolio" class="">
+     <h2 class="text-center mt-5 mb-lg-5 fw-bold">Inspirações</h2>
+
+     <div class="d-flex flex-column-reverse flex-lg-row-reverse row-cols-lg-2 gap-2 align-items-center">
+         <div><img src="assets/vivianne-westwood.png" class="phone1 img-fluid" alt=""></div>
+         <div class=""><div class="m-lg-5 m-4 flex-fill" ><h1 class="fw-bold">Vivienne Westwood</h1>
+         <p>Vivienne Westwood é uma icônica estilista britânica que desempenhou um papel fundamental no desenvolvimento da moda punk. Sua abordagem irreverente e provocativa à moda, juntamente com seu relacionamento com Malcolm McLaren, ajudou a definir o estilo punk em meados dos anos 70. Westwood é conhecida por suas roupas extravagantes, que desafiam as normas tradicionais da moda e incorporam elementos rebeldes e subversivos. Sua contribuição para a moda punk deixou um legado duradouro e influente na cultura fashion e no cenário cultural em geral.</p>
+         <a target="_blank" href="https://www.viviennewestwood.com/en-gb/westwood-world/the-story-so-far/"><button  class="primary-button p-2">Aprenda Mais</button></a></div>
+        </div>
+     </div>
+    
+     <div class=" d-flex flex-column-reverse flex-lg-row row-cols-lg-2 gap-2 align-items-center">
+      <div><img src="./assets/moda-alternativa.png" class="phone1 img-fluid" alt=""></div>
+      <div class="m-lg-5 m-4 flex-fill " ><h1 class="fw-bold" >Moda Alternativa</h1>
+      <p>A moda alternativa é um estilo de moda diversificado e eclético que se afasta das tendências convencionais e dominantes da indústria da moda. Ela abraça a individualidade e a expressão pessoal, permitindo que as pessoas criem looks únicos que refletem suas personalidades e interesses. A moda alternativa engloba uma ampla gama de subculturas e estilos, como o punk, o gótico, o hippie, o vintage e o grunge, entre outros. "</p>
+      <a target="_blank" href="http://www.modadesubculturas.com.br/2014/11/o-que-e-moda-alternativa-e-pessoas-alternativas.html"><button  class="btn2 p-2">Aprenda Mais</button></a></div>
+     </div>
+</section>
+
+ <!--about-->
+  <section id="about">
+     <div class="d-flex flex-column-reverse flex-lg-row row-cols-lg-2 gap-2 align-items-center">
+       <div><img src="./assets/amanda-playing.png" class="phone1 img-fluid" alt=""></div>
+      <div class="m-lg-5 m-4 p-2 flex-fill" ><h1 class="fw-bold">Sobre Mim</h1>
+      <p>Meu nome é Amanda Gonçalves, sou uma estudante do ensino médio com aspirações de me tornar uma futura estudante de design de moda. Tenho um grande interesse na moda alternativa e estou até considerando fazer um curso de costura para aprimorar minhas habilidades nesse campo criativo. Além disso, estudo inglês, pois acredito que isso pode abrir portas para oportunidades internacionais emocionantes no futuro. Tenho paixão por expressar minha criatividade, seja através da moda, da costura, ou de qualquer outra forma artística que eu possa explorar.<br /> <br>
+      <p>🥐 Eu amo CROISSANT 🥐</p> <br>
+     <a target="_blank" href="https://www.instagram.com/ak1ii/"><button  class="btn3 p-2">Meu Instagram</button></a> 
+  </div>
   </div>
 
-  <script src="script.js"></script>
+ </section>
+
+  
+ <!--contact-->
+ <section id="contact">
+  <div class="d-flex flex-column flex-lg-row row-cols-lg-2 gap-2 align-items-center">
+    <div class="m-lg-5 m-4 p-2 flex-fill" ><h1 class="fw-bold">Me diga "olá!".</h1><br /><br />
+      <p>Estou sempre aberta para discutir sobre projetos, 
+        aprender novas coisas ou ajudar
+        com os seus desafios.<br /><br />
+
+       Me mande um email!<br />
+        amandinha_querida@croissant.com</p>
+   </div>
+
+    <div class="m-lg-5 m-4 flex-fill contcontainer" >
+      <div action="action_page.php">
+    
+        <h3 class="font-weight-norma" >Ou use o formulário abaixo:</h3>
+        <input type="text" id="fname" name="firstname" placeholder="Nome..">
+    
+        
+        <input type="text" id="lname" name="lastname" placeholder="E-mail..">
+        <textarea id="subject" name="subject" placeholder="Escreva algo.."></textarea>
+        <input type="submit" value="Enviar">
+    
+      </div>
+    </div>
+   </section>
+
+
+    <!--footer-->
+     <section id="footer">
+      <footer class="py-3 my-4">
+      <ul class="nav justify-content-center pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-dark fw-bold">Início</a></li>
+      <li class="nav-item"><a href="#whatido" class="nav-link px-2 text-dark fw-bold">O que eu faço?</a></li>
+      <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-dark fw-bold">Inspirações</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-dark fw-bold">Sobre</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link px-2 text-dark fw-bold">Contato</a></li>
+      </ul>
+    </footer>
+
+   </section>
+
+
+
+
+
+
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>
+
